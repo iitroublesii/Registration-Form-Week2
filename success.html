@@ -12,16 +12,28 @@
 <body>
 
     <div class="output-container">
-        <h1>Successful Registration!"</h1>
+        <h2>Successful Registration!"</h2>
         <div id="output"></div>
     </div>
 
+    <script>
+        const outputDiv = document.getElementById("output");
 
+        const savedData = JSON.parse(localStorage.getItem("formData"));
 
+        if (savedData) {
+            outputDiv.innerHTML = `
+        <p><strong>Name:</strong> ${savedData.firstName} ${savedData.lastName}</p>
+        <p><strong>Email:</strong> ${savedData.email}</p>
+        <p><strong>Birthdate:</strong> ${savedData.birthdate}</p>
+        <p><strong>Special Interests:</strong> ${savedData.specialInterests.join(", ") || "None"}</p>
+      `;
+            localStorage.removeItem("formData");
+        } else {
+            outputDiv.textContent = "No data found.";
+        }
+    </script>
 
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>

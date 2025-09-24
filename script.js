@@ -1,21 +1,23 @@
-document.getElementById("registerForm").onsubmit = function(event) {
-event.preventDefault();
-}
+const form = document.getElementById("registrationForm");
 
-const firstName = document.getElementById("firstname").value;
-const lastName = document.getElementById("lastname").value;
-const email = document.getElementById("email").value;
-const password = document.getElementById("password").value;
-const birthdate = document.getElementById("birthdate").value;
-const interests = [];
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); 
 
-  document.querySelectorAll('input[name="interests"]:checked').forEach((checkbox) => {
-        interests.push(checkbox.value);
+  // Responses
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const birthdate = document.getElementById("birthdate").value;
+
+  // checked interests
+  const specialInterests = [];
+  if (document.getElementById("books").checked) specialInterests.push("Books");
+  if (document.getElementById("music").checked) specialInterests.push("Music");
+  if (document.getElementById("movies").checked) specialInterests.push("Movies");
+
+  // saving data
+  const formData = { firstName, lastName, email, birthdate, specialInterests };
+  localStorage.setItem("formData", JSON.stringify(formData));
+
+  window.location.href = "success.html";
 });
-
-    outputDiv.innerHTML = `
-        <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
-        <p><strong>Email:</strong> ${formData.email}</p>
-        <p><strong>Birthdate:</strong> ${formData.birthdate}</p>
-        <p><strong>Special Interests:</strong> ${formData.interests.join(", ") || "None selected"}</p>
-      `;

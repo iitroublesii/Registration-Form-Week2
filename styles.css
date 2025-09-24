@@ -21,6 +21,12 @@ h1 {
     color: #39304A;
 }
 
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #B0A990
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -46,7 +52,7 @@ input[type="date"] {
 p {
    text-align: center; 
    color: #B0A990;
-   font-size: 20px;
+   font-size: 30px;
 }
 
 .check-boxes {
@@ -56,7 +62,7 @@ p {
 
 .check-boxes label {
     font-size: 20px;
-    color: #B0A990;
+    color: #39304A;
     margin: 0 15px;
     gap: 5px;
 }
@@ -65,7 +71,7 @@ button {
     display: block;
     padding: 12px 20px;
     margin: 20px auto;
-    background-color: #B0A990;
+    background-color: #7D7461;
     color: #39304A;
     border: none;
     border-radius: 5px;
@@ -74,13 +80,5 @@ button {
 }
 
 button:hover {
-    background-color: #7D7461;
-}
-
-.output-container {
     background-color: #B0A990;
-    padding: 20px 30px;
-    border-radius: 8px;
-    display: inline-block;
-    box-shadow: 0 4px 8px #7D7461;
 }
