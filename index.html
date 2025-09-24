@@ -13,44 +13,33 @@
         <h1>Registration Form</h1>
         <form id="registrationForm">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" required>
 
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email">
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" minlength="6" required>
+            <input type="password" id="password" minlength="6" required>
 
             <label for="birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
+            <input type="date" id="birthdate" required>
     </div>
 
     <div class="check-boxes">
         <p>Special Interests:</p>
-        <label for="books">
-            <input type="checkbox" id="books" name="specialinterests" value="Books"> Books
-        </label>
-        <label for="music">
-            <input type="checkbox" id="music" name="specialinterests" value="Music"> Music
-        </label>
-        <label for="movies">
-            <input type="checkbox" id="movies" name="specialinterests" value="Movies"> Movies
-        </label>
+        <label><input type="checkbox" id="books" value="Books"> Books</label>
+        <label><input type="checkbox" id="music" value="Music"> Music</label>
+        <label><input type="checkbox" id="movies" value="Movies"> Movies</label>
     </div>
 
     <button type="submit">Submit</button>
 
     </form>
 
-
     <div id="output"></div>
-
-
-
-
 
     <script src="script.js"></script>
 </body>
