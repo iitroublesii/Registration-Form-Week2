@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-color: #7D7461;
+    background-color: #202030;
     margin: 0;
     padding: 0;
 }
@@ -29,4 +29,35 @@ form {
 label {
     margin-top: 10px;
     font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #39304A;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.check-boxes {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #B0A990;
+    color: #39304A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #7D7461;
 }
