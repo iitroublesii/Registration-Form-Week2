@@ -9,25 +9,40 @@
 </head>
 
 <body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
 
-    <h1>Registration Form</h1>
-    <form id="registrationForm">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="6" required>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+    </div>
 
-        <label for="birthdate">Birthdate:</label>
-        <input type="date" id="birthdate" name="birthdate" required>
+    <label>Special Interests:</label>
+    <div class="check-boxes">
+        <label for="books">
+            <input type="boxes" id="books" name="specialinterests" value="Books"> Books
+        </label>
+        <label for="music">
+            <input type="boxes" id="books" name="specialinterests" value="Music"> Music
+        </label>
+        <label for="movies">
+            <input type="movies" id="movies" name="specialinterests" value="Movies"> Movies
+        </label>
+    </div>
 
-        <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
+
     </form>
 
 
