@@ -1,9 +1,32 @@
+body {
+    font-family: monospace;
+    background-color: #7D7461;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #B0A990;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #7D7461;
+}
+
+
 h1 {
-   text-align: center; 
-   color: #39304A;
+    text-align: center;
+    color: #39304A;
 }
 
 form {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 18px;
 }
