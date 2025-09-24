@@ -76,3 +76,11 @@ button {
 button:hover {
     background-color: #7D7461;
 }
+
+.output-container {
+    background-color: #B0A990;
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 8px #7D7461;
+}

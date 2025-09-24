@@ -12,3 +12,10 @@ const interests = [];
   document.querySelectorAll('input[name="interests"]:checked').forEach((checkbox) => {
         interests.push(checkbox.value);
 });
+
+    outputDiv.innerHTML = `
+        <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+        <p><strong>Email:</strong> ${formData.email}</p>
+        <p><strong>Birthdate:</strong> ${formData.birthdate}</p>
+        <p><strong>Special Interests:</strong> ${formData.interests.join(", ") || "None selected"}</p>
+      `;
