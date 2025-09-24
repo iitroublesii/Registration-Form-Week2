@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <h1>Registration Form</h1>
-    <form id="registrationForm" onsubmit=return capturedata()>
-        <label for="First Name">First Name:</label>
-        <input type="text" id="First Name">
+    <form id="registrationForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
 
-        <label for="Last Name">Last Name:</label>
-        <input type="text" id="Last Name">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
 
-        
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <button type="submit">Submit</button>
     </form>
 
 
-
+    <div id="output"></div>
 
 
 
@@ -28,4 +33,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
