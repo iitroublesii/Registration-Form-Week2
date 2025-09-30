@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-color: #202030;
+    background-color: #FAE3C6;
     margin: 0;
     padding: 0;
 }
@@ -10,21 +10,21 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #B0A990;
+    background-color: #A13D63;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #7D7461;
+    box-shadow: 0 4px 8px #A13D63;
 }
 
 
 h1 {
     text-align: center;
-    color: #39304A;
+    color: #6DD3CE;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: #B0A990
+    color:  #6DD3CE;
 }
 
 form {
@@ -33,6 +33,7 @@ form {
 }
 
 label {
+    color: #6DD3CE;
     margin-top: 10px;
     font-size: 18px;
 }
@@ -44,15 +45,15 @@ input[type="date"] {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 2px solid #39304A;
+    border: 2px solid #6DD3CE;
     border-radius: 5px;
     font-size: 16px;
 }
 
 p {
    text-align: center; 
-   color: #B0A990;
-   font-size: 30px;
+   color: #6DD3CE;
+   font-size: 26px;
 }
 
 .check-boxes {
@@ -62,7 +63,7 @@ p {
 
 .check-boxes label {
     font-size: 20px;
-    color: #39304A;
+    color: #6DD3CE;
     margin: 0 15px;
     gap: 5px;
 }
@@ -71,8 +72,8 @@ button {
     display: block;
     padding: 12px 20px;
     margin: 20px auto;
-    background-color: #7D7461;
-    color: #39304A;
+    background-color: #6DD3CE;
+    color: #A13D63;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,5 +81,5 @@ button {
 }
 
 button:hover {
-    background-color: #B0A990;
+    background-color: #FAE3C6;
 }
